@@ -1,37 +1,102 @@
 <?php echo $this->doctype(); ?>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIZISELLS</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <!-- <script src="js/signUpPopUp.js"></script> -->
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Welcome to VIZISELLS</h1>
+      </div>
+    </div>
+<div class = "row">
+  <div class ="large-12 columns">
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/VS/vizi-category.php">Home</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+  <li><a href="#" data-reveal-id="myModal">Sign In</a></li>
+<!--Pop up -->
+<!-- Reveal Modals begin -->
+<div id="myModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="firstModalTitle">Sign up!</h2>
 
-        <?php echo $this->headMeta()
-            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
-            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
-        ?>
+<!--Log in form-->
+<form action = "vizi-admin.php" method="POST">
+  <div class="row">
+        <div class="small-4 columns">
+          <div class ="visiID">
+              <label for="ID">ID: </label>
+              <input type="text" name="ID" id="ID" placeholder="Type your ID..." />
+          </div>
+        </div>
+    </div>
+    <div class="row"> 
+        <div class="small-4 columns">
+          <label for="PW" >PW: </label>
+          <input type="password" name="PW" id="PW" placeholder="Type your password..." />
+      </div>
+    </div>
+    <div class="row">
+      <div class = "small-4 columns">
+ <p><a href="Link where it leads to admin page if authentication is complete" data-reveal-id="Login" class="secondary button">Log In</a></p>
+ <p><a href="#" data-reveal-id="secondModal" class="secondary button">Sign Up?</a></p>
+</div></div>
+</form>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
 
-        <!-- Le styles -->
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
-                        ->prependStylesheet($this->basePath('css/style.css'))
-                        ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
-                        ->prependStylesheet($this->basePath('css/bootstrap.min.css')) ?>
+<div id="secondModal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="secondModalTitle">This is a Sign up page</h2>
+  <p>Sign up Please!!!</p>
+  <!--This is where the sign up page will be designed -->
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
 
-        <!-- Scripts -->
-        <?php echo $this->headScript()
-            ->prependFile($this->basePath('js/bootstrap.min.js'))
-            ->prependFile($this->basePath('js/jquery.min.js'))
-            ->prependFile($this->basePath('js/respond.min.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
-            ->prependFile($this->basePath('js/html5shiv.js'),   'text/javascript', array('conditional' => 'lt IE 9',))
-        ; ?>
+    <!-- Sign In changes to My account once signed in.
+      <li class="has-dropdown">
+        <a href="#">My Account</a>
+        <ul class="dropdown">
+          <li><a href="#">User Profile</a></li>
+        </ul>
+      </li>
+    -->
+      <li><a href="#">About Us</a></li>
+    </ul>
 
-    </head>
-    <body>
+  </section>
+</nav>
+</div></div>
         <div class="container">
             <?php echo $this->content; ?>
             <hr>
             <footer>
-                <p>&copy; 2015 - <?php echo date('Y') ?> by DOWtechnical Inc. <?php echo $this->translate('All rights reserved.') ?></p>
+                <div class="row">
+                    <div class="columns"> 
+                        <p>&copy; 2015 - <?php echo date('Y') ?> by ©Vizisells.com <?php echo $this->translate('All rights reserved.') ?></p>
+                    </div>
+                </div>
             </footer>
         </div> <!-- /container -->
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script> 
+        <script>
+            $(document).foundation();
+        </script>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>
