@@ -9,8 +9,16 @@
 
 namespace Application;
 
+define("DB_PREFIX","vz_");
+
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+
+use Application\Model\State;
+use Application\Model\StateTable;
+
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\TableGateway\TableGateway;
 
 class Module
 {
@@ -33,6 +41,24 @@ class Module
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),
+            ),
+        );
+    }
+
+    public function getServiceConfig() {
+        return array(
+            'factories' => array(
+                'State\Model\StateTable' => function($sm) {
+                    $tableGateway = $sm->get('StateTableGateway');
+                    $table = new StateTable($tableGateway);
+                    return $table;
+                },
+                'StateTableGateway' => function ($sm) {
+                    $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+                    $resultSetPrototype = new ResultSet();
+                    $resultSetPrototype->setArrayObjectPrototype(new State());
+                    return new TableGateway(DB_PREFIX.'state', $dbAdapter, null, $resultSetPrototype);
+                },
             ),
         );
     }
