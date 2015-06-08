@@ -61,3 +61,23 @@ insert into vz_state (state_id,state_abbr,state_name,country_id) values (57,'WV'
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (58,'WI','Wisconsin',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (59,'WY','Wyoming',01);
 commit;
+
+
+
+
+DELETE FROM vz_category;
+INSERT INTO vz_category VALUES (01,'Activities','vz_post_activity');
+INSERT INTO vz_category VALUES (02,'Careers','vz_post_career');
+INSERT INTO vz_category VALUES (03,'Cars','vz_post_car');
+INSERT INTO vz_category VALUES (04,'Education','vz_post_education');
+INSERT INTO vz_category VALUES (05,'Electronics','vz_post_electronic');
+INSERT INTO vz_category VALUES (06,'Home Goods', 'vz_post_home');
+INSERT INTO vz_category VALUES (07,'House On Sale', 'vz_post_housing');
+INSERT INTO vz_category VALUES (08,'Fashion', 'vz_post_fashion');
+INSERT INTO vz_category VALUES (09,'Food', 'vz_post_food');
+INSERT INTO vz_category VALUES (10,'Meet Ups', 'vz_post_meetup');
+INSERT INTO vz_category VALUES (11,'Merchandise','vz_post_merchandise');
+INSERT INTO vz_category VALUES (12,'Rental', 'vz_post_rental');
+INSERT INTO vz_category VALUES (13,'Service', 'vz_post_service');
+INSERT INTO vz_category VALUES (14,'Others', 'vz_post_other');
+commit;
