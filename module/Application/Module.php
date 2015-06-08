@@ -48,7 +48,7 @@ class Module
     public function getServiceConfig() {
         return array(
             'factories' => array(
-                'State\Model\StateTable' => function($sm) {
+                'Application\Model\StateTable' => function($sm) {
                     $tableGateway = $sm->get('StateTableGateway');
                     $table = new StateTable($tableGateway);
                     return $table;

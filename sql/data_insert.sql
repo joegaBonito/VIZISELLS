@@ -11,7 +11,7 @@ insert into vz_state (state_id,state_abbr,state_name,country_id) values (07,'CO'
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (08,'CT','Connecticut',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (09,'DE','Delaware',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (10,'DC','District of Columbia',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (11,'FM','Federated vz_states of Micronesia',01);
+insert into vz_state (state_id,state_abbr,state_name,country_id) values (11,'FSM','Federated States of Micronesia',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (12,'FL','Florida',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (13,'GA','Georgia',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (14,'GU','Guam',01);
