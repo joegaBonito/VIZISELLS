@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
   session_start();
 
@@ -106,6 +107,20 @@
           </div>
 
 <!--Calls footer-->
+=======
+>>>>>>> 53e7af144cf6bcdb20dca742e30433b7e6287f1c
 <?php 
-  }
-?>
+  $categories = array("Activities","Cars","Education","Electronics",
+                      "Fashion","Food","Home Goods","House on sale",
+                      "Jobs","Meet Ups","Merchandise","Rent","Services",
+                      "Others");
+  
+  echo "<div class='row'>";
+  foreach($categories as $i => $category) { ?>
+        <div class='large-4 medium-4 small-4 columns' style='float:left'>
+          <div class='callout panel'>
+            <a href='/VS/vizi-states.php'><?php echo $categories["$i"] ?></a>
+          </div>
+        </div>
+  <?php } ?>
+  </div>
