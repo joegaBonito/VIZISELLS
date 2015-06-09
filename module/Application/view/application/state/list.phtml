@@ -1,4 +1,12 @@
-State list
-<?php foreach($states as $state):?>
-<div><?php echo $state->state_name;?></div>
-<?php endforeach; ?>
+   <div class='row'>
+          <div class='large-4 medium-4 small-4 columns' style='margin-bottom:20px; float:none'>
+            <a href='../'>Categories</a> 
+          </div>
+  <?php foreach($states as $i => $state) { ?>
+  <div class='large-4 medium-4 small-4 columns' style='float:left'>
+          <div class='callout panel'>
+            <a href='#'><?php echo $state->state_name; ?></a>
+          </div>
+        </div>
+  <?php } ?>
+  </div>

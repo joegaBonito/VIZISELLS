@@ -11,8 +11,10 @@ class StateController extends AbstractActionController
 
     public function listAction()
     {
+        $category = $this->getRequest()->getQuery('category');
         return new ViewModel(array(
             'states'=> $this->getStateTable()->fetchAll(),
+            'category'=>$category,
         ));
     }
 
