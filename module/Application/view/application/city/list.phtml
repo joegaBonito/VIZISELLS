@@ -1,2 +1,12 @@
-<?php var_dump($cities); ?>
-city list
+   <div class='row'>
+          <div class='large-4 medium-4 small-4 columns' style='margin-bottom:20px; float:none'>
+            <a href='../'>Categories</a><span> > </span> <a href='../state/list?category=<?php echo $category;?>'>State</a>
+          </div>
+  <?php foreach($cities as $city) { ?>
+  <div class='large-4 medium-4 small-4 columns' style='float:left'>
+          <div class='callout panel'>
+            <a href='#'><?php echo $city->city_name; ?></a>
+          </div>
+        </div>
+  <?php } ?>
+  </div>

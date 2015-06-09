@@ -12,8 +12,10 @@ class CityController extends AbstractActionController
     public function listAction()
     {
         $state_id = $this->getRequest()->getQuery('state_id');
+        $category = $this->getRequest()->getQuery('category');
         return new ViewModel(array(
             'cities'=> $this->getCityTable()->fetchByStateId($state_id),
+            'category' => $category,
         ));
     }
 
