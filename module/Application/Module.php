@@ -16,6 +16,8 @@ use Zend\Mvc\MvcEvent;
 
 use Application\Model\State;
 use Application\Model\StateTable;
+use Application\Model\City;
+use Application\Model\CityTable;
 
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
@@ -58,6 +60,17 @@ class Module
                     $resultSetPrototype = new ResultSet();
                     $resultSetPrototype->setArrayObjectPrototype(new State());
                     return new TableGateway(DB_PREFIX.'state', $dbAdapter, null, $resultSetPrototype);
+                },
+                'Application\Model\CityTable' => function($sm) {
+                    $tableGateway = $sm->get('CityTableGateway');
+                    $table = new CityTable($tableGateway);
+                    return $table;
+                },
+                'CityTableGateway' => function ($sm) {
+                    $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+                    $resultSetPrototype = new ResultSet();
+                    $resultSetPrototype->setArrayObjectPrototype(new City());
+                    return new TableGateway(DB_PREFIX.'city', $dbAdapter, null, $resultSetPrototype);
                 },
             ),
         );
