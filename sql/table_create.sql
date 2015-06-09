@@ -19,7 +19,7 @@ FOREIGN KEY(country_id) REFERENCES vz_country(country_id)
 );
 
 create table vz_city(
-city_id INT NOT NULL,
+city_id INT NOT NULL AUTO_INCREMENT,
 city_name VARCHAR(256),
 state_id INT,
 country_id INT,
@@ -29,7 +29,7 @@ FOREIGN KEY(state_id) REFERENCES vz_state(state_id)
 );
 
 create table vz_zip(
-zip_id INT NOT NULL,
+zip_id INT NOT NULL AUTO_INCREMENT,
 zipcode VARCHAR(10),
 city_id INT,
 state_id INT,
@@ -41,7 +41,7 @@ FOREIGN KEY(city_id) REFERENCES vz_city(city_id)
 );
 
 create table vz_user(
-user_id INT NOT NULL,
+user_id INT NOT NULL AUTO_INCREMENT,
 user_password VARCHAR(512),
 email VARCHAR(256),
 user_name VARCHAR(128),
@@ -67,7 +67,7 @@ PRIMARY KEY(category_id)
 );
 
 create table vz_user_post_relation(
-post_id INT NOT NULL,
+post_id INT NOT NULL AUTO_INCREMENT,
 category_id INT,
 user_id INT,
 PRIMARY KEY(post_id), 
