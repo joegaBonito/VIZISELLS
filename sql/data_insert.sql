@@ -3,7 +3,6 @@ insert into vz_country (country_id,country_name) values (01,'United States');
 
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (01,'AL','Alabama',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (02,'AK','Alaska',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (03,'AS','American Samoa',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (04,'AZ','Arizona',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (05,'AR','Arkansas',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (06,'CA','California',01);
@@ -11,10 +10,8 @@ insert into vz_state (state_id,state_abbr,state_name,country_id) values (07,'CO'
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (08,'CT','Connecticut',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (09,'DE','Delaware',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (10,'DC','District of Columbia',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (11,'FSM','Federated States of Micronesia',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (12,'FL','Florida',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (13,'GA','Georgia',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (14,'GU','Guam',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (15,'HI','Hawaii',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (16,'ID','Idaho',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (17,'IL','Illinois',01);
@@ -24,7 +21,6 @@ insert into vz_state (state_id,state_abbr,state_name,country_id) values (20,'KS'
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (21,'KY','Kentucky',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (22,'LA','Louisiana',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (23,'ME','Maine',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (24,'MH','Marshall Islands',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (25,'MD','Maryland',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (26,'MA','Massachusetts',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (27,'MI','Michigan',01);
@@ -40,7 +36,6 @@ insert into vz_state (state_id,state_abbr,state_name,country_id) values (36,'NM'
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (37,'NY','New York',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (38,'NC','North Carolina',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (39,'ND','North Dakota',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (40,'MP','Northern Mariana Islands',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (41,'OH','Ohio',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (42,'OK','Oklahoma',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (43,'OR','Oregon',01);
@@ -54,7 +49,6 @@ insert into vz_state (state_id,state_abbr,state_name,country_id) values (50,'TN'
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (51,'TX','Texas',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (52,'UT','Utah',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (53,'VT','Vermont',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (54,'VI','Virgin Islands',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (55,'VA','Virginia',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (56,'WA','Washington',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (57,'WV','West Virginia',01);
