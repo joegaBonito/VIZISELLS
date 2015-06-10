@@ -39,7 +39,6 @@ insert into vz_state (state_id,state_abbr,state_name,country_id) values (39,'ND'
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (41,'OH','Ohio',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (42,'OK','Oklahoma',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (43,'OR','Oregon',01);
-insert into vz_state (state_id,state_abbr,state_name,country_id) values (44,'PW','Palau',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (45,'PA','Pennsylvania',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (46,'PR','Puerto Rico',01);
 insert into vz_state (state_id,state_abbr,state_name,country_id) values (47,'RI','Rhode Island',01);

@@ -1,0 +1,3 @@
+mysql -uroot -pstudent < table_create.sql
+mysql -uroot -pstudent < data_insert.sql
+mysql -uroot -pstudent < city_insert.sql
