@@ -3,13 +3,98 @@
                       "Fashion","Food","Home Goods","House on sale",
                       "Jobs","Meet Ups","Merchandise","Rent","Services",
                       "Others");
-  
-  echo "<div class='row'>";
-  foreach($categories as $i => $category) { ?>
-        <div class='large-4 medium-4 small-4 columns' style='float:left'>
-          <div class='callout panel'>
-            <a href='../state/list?category=<?php echo $categories["$i"];?>'><?php echo $categories["$i"] ?></a>
-          </div>
+?>
+<link rel="stylesheet" href="../css/vz/index.css" />
+  <div class='row'>
+        <div class='large-12 columns'>
+            <ul class="small-block-grid-5">
+              <li>
+              <div>
+                <a href='../state/list?category=activity'><img src='../img/index/activity.jpg'/></a>
+              </div>
+              </li>
+              <li>
+              <div>
+                <img src='../img/index/words.jpg'/>
+              </div>
+              </li>
+              <li>
+              <div>
+                <a href='../state/list?category=car'><img src='../img/index/car.jpg'/></a>
+              </div>
+              </li>
+              <li>
+              <div>
+                <a href='../state/list?category=electronics'><img src='../img/index/electronics.jpg'/></a>
+              </div>
+              </li>
+              <li>
+              <div>
+                <a href='../state/list?category=food'><img src='../img/index/food.jpg'/></a>
+              </div>
+              </li>
+            </ul>
         </div>
-  <?php } ?>
+  </div>
+  <div class='row' >
+        <div class='large-12 columns'>
+        <ul class="small-block-grid-5">
+          <li>
+          <div>
+            <a href='../state/list?category=education'><img src='../img/index/education.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=fashion'><img src='../img/index/fashion.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=service'><img src='../img/index/services.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=house'><img src='../img/index/house.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=rent'><img src='../img/index/rent.jpg'/></a>
+          </div>
+          </li>
+        </ul>
+        </div>
+  </div>
+  <div class='row' >
+        <div class='large-12 columns'>
+        <ul class="small-block-grid-5">
+          <li>
+          <div>
+            <a href='../state/list?category=homegoods'><img src='../img/index/homegoods.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=merchandise'><img src='../img/index/merchandise.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=meetup'><img src='../img/index/meet-up-1.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=job'><img src='../img/index/job.jpg'/></a>
+          </div>
+          </li>
+          <li>
+          <div>
+            <a href='../state/list?category=others'><img src='../img/index/others.jpg'/></a>
+          </div>
+          </li>
+        </ul>
+        </div>
   </div>
