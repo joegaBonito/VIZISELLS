@@ -76,6 +76,7 @@ return array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
             'Application\Controller\State' => 'Application\Controller\StateController',
             'Application\Controller\City' => 'Application\Controller\CityController',
+            'Application\Controller\Post' => 'Application\Controller\PostController',
         ),
     ),
     'view_manager' => array(
