@@ -1,0 +1,91 @@
+#textlinks{
+    float:left;
+    margin-top: 10px;
+    min-width: 240px;
+    padding-right:0px;
+}
+
+#undertopbar{
+    min-width: 600px;
+    height:40px;
+}
+
+#inputs{
+    float: left;
+    min-width: 240px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#form{
+    padding-right:0px;
+}
+
+#searchdiv{
+    padding-left:0px;
+}
+
+#zipdiv{
+    padding-left:0px;
+}
+#zipcodebutton{
+    min-width: 100px;
+    margin-bottom: 0px;
+}
+
+#validzipcode{
+    color: red;
+    font-size: 10pt;
+}
+
+#filter{
+    padding-left: 0px;
+    float: left;
+    min-width: 100px;
+}
+
+#searchbox{
+   min-width: 100px;
+   margin-bottom: 0px;
+}
+
+
+#enter{
+     width: 0px;
+     visibility: hidden;
+     height: 0px;
+}
+
+#filterbutton{
+    width: 130px;
+    height: 37px;
+    margin-bottom: 0px;
+}
+
+
+
+a:hover{
+    text-decoration: underline;
+    color: #0000FF;
+}
+
+#allpostspanel{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    float: center;
+}
+
+#postpanel{
+    margin-bottom:20px;
+    float:center;
+}
+
+#thumbnail{
+    float:left;
+}
+
+#footer{
+    width: 100%;
+}
