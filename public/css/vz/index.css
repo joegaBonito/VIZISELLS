@@ -11,5 +11,17 @@
 }
 
 .small-block-grid-5 li{
-    padding: 0 0 0 0;
+    padding: 2px;
+}
+
+.small-block-grid-5 li img{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+
+.top-bar{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
 }
