@@ -19,7 +19,7 @@
 
                     <div class = "small-6 columns" id = "zipdiv">
                         <input type="text" ng-model = "zipcode" ng-pattern = "/^\d{5}$/" ng-change = "change()" name = "zipcode" class = "Zipcode" id = "zipcodebutton" placeholder="Enter Zip Code" />
-                        <span id = "validzipcode" ng-show = "submitted && !changed && myform.zipcode.$error.pattern">Invalid Zipcode</span>
+                        <span id = "validzipcode" class = "ng-cloak" ng-show = "submitted && !changed && myform.zipcode.$error.pattern">Invalid Zipcode</span>
                         <input type="submit" id = "enter"/>
                     </div>
                 </form>
