@@ -1,0 +1,26 @@
+.columns {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.vz_block_list {
+    background: #344f7d none repeat scroll 0 0;
+    border-color: #101010;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    margin-bottom: 10px;
+    padding:5px;
+    height: 42px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    text-align:center;
+}
+
+
+.vz_block_list a{
+    color: #fff;
+    font-weight:bold;
+    font-size:20px;
+}
