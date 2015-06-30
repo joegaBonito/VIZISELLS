@@ -26,29 +26,35 @@
     border-radius:5px;
 }
 
-.row {
-
-}
-
 .back-yellow {
 	color:blue;
 	background-color:yellow;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
 }
 
 .back-blue {
 	color:yellow;
 	background-color:blue;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
 }
 
 .back-green {
 	color:white;
 	background-color:green;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
 }
 
 .categoryDiv {
 	position:relative;
 	text-align:center;
 }
+
 .categoryDiv > .text {
 	margin:0;
 	padding:0;
