@@ -37,6 +37,7 @@ p{
 #zipdiv{
     padding-left:0px;
 }
+
 #zipcodebutton{
     min-width: 100px;
     margin-bottom: 0px;
@@ -70,11 +71,29 @@ p{
     margin-bottom: 0px;
 }
 
-
-
 a:hover{
     text-decoration: underline;
     color: #0000FF;
 }
 
+.orbit-container{
+    height: 480px;
+    width: 600px;
+}
 
+.image-container{
+    height: 480px;
+    width: 600px;
+}
+
+#img{
+    max-height: 480px;
+    max-width: 600px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    display: block;
+    margin: auto;
+}
