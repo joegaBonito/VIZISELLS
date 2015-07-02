@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="../css/userprofile.css" />
+<link rel="stylesheet" href="../css/xeditable.css"/>
+<script src="../js/vendor/xeditable.js">
+</script>
+    <div class = "row" id = "tabsrow">
+        <ul class="tabs" data-tab id = "tabsul">
+           <li class="tab-title active" id = "tab"><a href="#panel1">Dashboard</a></li>
+           <li class="tab-title" id = "tab"><a href="#panel2">Profile</a></li>
+        </ul>
+    </div>
+    <div class = "row" id = "contentsrow">
+        <div class="callout panel" id = "allpostspanel">
+            <div class="tabs-content">
+                <div class="content active" id="panel1">
+                    <p>dashboard</p>
+                </div>
+                <div class="content" id="panel2">
+                    <div ng-app = "app" ng-controller = "ctrl">
+                    <p>
+                        <h3>Profile Info</h3>
+                        Name:<br>
+                        Gender:<br>
+                        Date of Birth:<br>
+                        Description:<br>
+                        <div><a href = "#" editable-textarea = "user.description">{{user.description || 'empty'}}</a></div>
+                    </p>
+                    <p>
+                        <h3>Contact Info</h3>
+                        Email: <br>
+                        <div><a href = "#" editable-email = "user.email">{{user.email || 'empty'}}</a></div>
+                        Phone Number: <br>
+                        <div><a href="#" editable-tel="user.phonenumber" e-pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$">{{ user.phonenumber || 'empty' }}</a></div>
+                        Address: <br>
+                        <div><a href = "#" editable-textarea = "user.address">{{user.address || 'empty'}}</a></div>
+                    </p>
+                    <p>
+                        <h3>Account Info</h3>
+                        Type of Account:<br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var app = angular.module("app", ["xeditable"]);
+    app.run(function(editableOptions, editableThemes) {
+        editableOptions.theme = 'default';
+        editableThemes['default'].submitTpl = '<button type="submit" id = "savebutton">Save</button>';
+        editableThemes['default'].cancelTpl = '<button type="button" ng-click="$form.$cancel()" id = "cancelbutton">Cancel</button>';
+    });
+
+    app.controller('ctrl', function($scope){
+        $scope.user = {
+            description: 'I am a description',
+            email: 'abc@def.com',
+            phonenumber: '123-214-5234',
+            address: 'I am an address\nSecond line'
+        };
+    });
+</script>

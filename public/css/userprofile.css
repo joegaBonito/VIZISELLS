@@ -1,0 +1,49 @@
+#tabsul{
+   margin-left: 20px;
+}
+
+.tabs .tab-title > a{
+    background-color: white;
+}
+
+.tabs .tab-title > a:hover{
+    background-color: #F2F2F2;
+}
+
+.tabs .tab-title.active a{
+    background-color: #D8D7D7;
+}
+
+#allpostspanel{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    float: center;
+}
+
+#savebutton{
+    height : 38px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+}
+
+#cancelbutton{
+    height: 38px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.editable-buttons{
+    height: 40px;
+}
+
+.editable-click{
+    white-space: pre-wrap;
+}
+
+#footer{
+    width: 100%;
+}
