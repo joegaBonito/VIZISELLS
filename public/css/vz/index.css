@@ -36,6 +36,11 @@ li.sideli{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius:5px;
+} 
+
+.back-yellow p {
+	width:100%;
+	background-color:red;	
 }
 
 .back-blue {
@@ -46,12 +51,22 @@ li.sideli{
     border-radius:5px;
 }
 
+.back-blue p {
+	width:100%;
+	background-color:green;
+}
+
 .back-green {
 	color:white;
 	background-color:green;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius:5px;
+}
+
+.back-green p {
+	width:100%;
+	background-color:black;
 }
 
 .categoryDiv {
