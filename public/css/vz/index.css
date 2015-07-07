@@ -51,12 +51,23 @@ li.sideli{
 }
 
 .center-width {
-	background:rgba(154, 205, 50, 1) none repeat scroll 0% 0%;
 	width:240px;
 	height:240px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius:5px;
+}
+
+.back-orange {
+    	background-color:#FFA500;
+}
+
+.back-green {
+    	background-color:#7CFC00;
+}
+
+.back-yellow {
+    	background-color:#FFFF00;
 }
 
 .center-width img {
