@@ -1,7 +1,7 @@
 $(document).ready(function() {
 /* Hovering Effect */
 	$(".pic").hover(function() {
-		$(this).fadeTo("fast",".2");
+		$(this).fadeTo("fast",".1");
 	}, function() {
 		$(this).fadeTo("fast","1");
 	});	

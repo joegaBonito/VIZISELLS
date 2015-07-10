@@ -43,6 +43,19 @@ li.sideli{
 	position:absolute;
 }
 
+.description {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	text-align:left;
+	top:20%;
+	left:5%;
+	display:none;
+	position:absolute;
+	color:white;
+	background:rgba(75, 175, 210, 1) none repeat scroll 0% 0%;
+}
+
 .fullWidth {
 	width:100%;
 	margin-left:auto;
@@ -91,28 +104,27 @@ li.sideli{
 }
 
 
-.back-orange p {
+.back-orange > .text {
 	width:100%;
 	color:white;
 	background-color:#D78C87;
 }
 
-.back-green p {
+.back-green > .text {
 	width:100%;
 	color:white;
 	background-color:#8EB227;
 }
 
-.back-yellow p {
+.back-yellow > .text {
 	width:100%;
 	color:white;
 	background-color:#BF953E;
 }
 
-.half-width p {
-	width:100%;
-	color:white;
-	background-color:#344F7D;
+.half-width > .text {
+    width: 100%;
+    color: #FFF;
+    background-color: #344F7D;
 }
-
 
