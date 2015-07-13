@@ -19,7 +19,7 @@ use Application\Model\StateTable;
 use Application\Model\City;
 use Application\Model\CityTable;
 use Application\Model\Post;
-use Application\Model\PostTable;
+use Application\Model\PostMerchandiseTable;
 
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
@@ -74,12 +74,12 @@ class Module
                     $resultSetPrototype->setArrayObjectPrototype(new City());
                     return new TableGateway(DB_PREFIX.'city', $dbAdapter, null, $resultSetPrototype);
                 },
-                'Application\Model\PostTable' => function($sm) {
-                    $tableGateway = $sm->get('PostTableGateway');
-                    $table = new PostTable($tableGateway);
+                'Application\Model\PostMerchandiseTable' => function($sm) {
+                    $tableGateway = $sm->get('PostMerchandiseTableGateway');
+                    $table = new PostMerchandiseTable($tableGateway);
                     return $table;
                 },
-                'PostTableGateway' => function ($sm) {
+                'PostMerchandiseTableGateway' => function ($sm) {
                     $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
                     $resultSetPrototype = new ResultSet();
                     $resultSetPrototype->setArrayObjectPrototype(new Post());

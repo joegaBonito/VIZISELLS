@@ -1,10 +1,6 @@
     <link rel="stylesheet" href="../css/postlist.css" />
-    <script
-    src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
-    </script>
     <div class = "row" id = "undertopbar">
         <div class = "small-6 columns" id = "textlinks">
-            >
             <a href = "home">Categories</a>  > 
             <a href = "state">States</a>  >  
             <a href = "city">Cities</a>
@@ -59,43 +55,25 @@
             </div>
         </div>
     </div>
-    <div class = "row" id = "allpostsrow">
-        <div class="callout panel" id = "allpostspanel">
-             <?php
-                 class Post
-                 {
-                     public $Title;
-                     public $Description;
-                 }
-  
-                 $First = new Post();
-                 $First->Title = 'First';
-                 $First->Description = "I'm first post";
-
-                 $Second = new Post();
-                 $Second->Title = 'Second';
-                 $Second->Description = "I'm second post";
-
-                 $Posts = array($First, $Second);
-
-                 foreach($Posts as $post){
-                     echo
-                     '<div class = "row" id = "postpanel">
-                         <div class = small-1 columns" id = "thumbnail">
-                             <a class = "th" id = "thumbimg" role = "button" aria-label = "Thumbnail" href = "#" data-reveal-id = "post-popup">
-                                 <img aria-hidden=true src="https://lh3.googleusercontent.com/-NYmBRZN0E7U/AAAAAAAAAAI/AAAAAAAAACI/VsA9fnrvtu4/photo.jpg?sz=50"/>
-                             </a>
-                             <div id="post-popup" class = "reveal-modal" data-reveal aria-labelledby = "popup-title" aria-hidden = "true" role = "dialog" href = "#">
-                                 <h2 id= "popup-title">Popup for post</h2>
-                                 <a class = "close-reveal-modal" aria-label = "Close">&#215;</a>
-                             </div>
-                         </div>
-                         <div class = "small-11 columns" id = "description">
-                             <a href = "#" data-reveal-id = "post-popup">' . $post->Title .'</a>
-                             <br>' . $post->Description . '
-                         </div>
-                      </div>';
-                 } 
-             ?>
+    <div class = "row" id = "allpostsrow" style="margin-top:20px">
+            <?php foreach($posts as $post): ?>
+        <div style="border:1px solid #999"></div>
+        <div class="" id = "allpostspanel" style="margin:20px">
+                <div class = "row" id = "postpanel">
+                    <div class = small-1 columns" id = "thumbnail">
+                        <a class = "th" id = "thumbimg" role = "button" aria-label = "Thumbnail" href = "#" data-reveal-id = "post-popup">
+                            <img aria-hidden=true src="https://lh3.googleusercontent.com/-NYmBRZN0E7U/AAAAAAAAAAI/AAAAAAAAACI/VsA9fnrvtu4/photo.jpg?sz=50"/>
+                        </a>
+                        <div id="post-popup" class = "reveal-modal" data-reveal aria-labelledby = "popup-title" aria-hidden = "true" role = "dialog" href = "#">
+                            <h2 id= "popup-title">Popup for post</h2>
+                            <a class = "close-reveal-modal" aria-label = "Close">&#215;</a>
+                        </div>
+                    </div>
+                    <div class = "small-11 columns" id = "description">
+                        <a href = "#" data-reveal-id = "post-popup"><?php echo $post->post_title;?></a>
+                        <br><?php echo  $post->post_head; ?>
+                    </div>
+                 </div>
         </div>
+            <?php endforeach; ?>
     </div>

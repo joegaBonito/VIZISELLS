@@ -4,7 +4,7 @@ namespace Application\Model;
 use Zend\Db\TableGateway\TableGateway;
 use Zend\Db\Sql\Select;
 
-class PostTable {
+class PostMerchandiseTable {
     protected $tableGateway;
     
     public function __construct(TableGateway $tableGateway) {

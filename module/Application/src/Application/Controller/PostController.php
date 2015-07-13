@@ -12,14 +12,18 @@ class PostController extends AbstractActionController
     public function listAction()
     {
         return new ViewModel(array(
-            'posts'=> $this->getPostTable()->fetchAll(),
+            'posts'=> $this->getPostTable('merchandise')->fetchAll(),
         ));
     }
 
-    public function getPostTable() {
+    public function getPostTable($cate) {
         if (!$this->postTable) {
             $sm = $this->getServiceLocator();
-            $this->postTable = $sm->get('Application\Model\PostTable');
+            switch($cate) {
+                case 'merchandise':
+                $this->postTable = $sm->get('Application\Model\PostMerchandiseTable');
+                break;
+            }
         }
         return $this->postTable;
     }
