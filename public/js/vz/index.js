@@ -1,14 +1,10 @@
 $(document).ready(function() {
 /* Hovering Effect */
-	$(".pic").hover(function() {
-		$(this).fadeTo("fast",".1");
-	}, function() {
-		$(this).fadeTo("fast","1");
-	});	
-	
-	$(".categoryDiv").hover(function() {	
-			$(this).children("p").css("display","block");	
-	}, function() {
-			$(this).children("p").css("display","none");
+	$(".categoryDiv").mouseenter(function() {
+		$(this).children("p").fadeTo("fast","1");
+		$(this).find("img").fadeTo("fast",".2");
+	}).mouseleave(function() {
+		$(this).children("p").fadeTo("fast","0");
+		$(this).find("img").fadeTo("fast","1");
 	});
 });
