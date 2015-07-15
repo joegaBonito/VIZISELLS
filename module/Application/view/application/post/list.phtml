@@ -62,7 +62,7 @@
                 <div class = "row" id = "postpanel">
                     <div class = small-1 columns" id = "thumbnail">
                         <a class = "th" id = "thumbimg" role = "button" aria-label = "Thumbnail" href = "#" data-reveal-id = "post-popup">
-                            <img aria-hidden=true src="https://lh3.googleusercontent.com/-NYmBRZN0E7U/AAAAAAAAAAI/AAAAAAAAACI/VsA9fnrvtu4/photo.jpg?sz=50"/>
+                            <img aria-hidden=true src="<?php echo $post->post_thumb;?>"/>
                         </a>
                         <div id="post-popup" class = "reveal-modal" data-reveal aria-labelledby = "popup-title" aria-hidden = "true" role = "dialog" href = "#">
                             <h2 id= "popup-title">Popup for post</h2>
