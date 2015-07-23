@@ -24,3 +24,7 @@
     font-weight:bold;
     font-size:20px;
 }
+
+.hovering {
+    background: #3a7aa2 none repeat scroll 0 0;
+}

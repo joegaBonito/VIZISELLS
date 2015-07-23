@@ -1,4 +1,5 @@
     <link rel="stylesheet" href="../css/vz/list.css" />
+	<script src="../js/vz/city.js"></script>
 <div class='row'>
     <div class='large-4 medium-4 small-4 columns' style='margin-bottom:20px; float:none'>
         <a href='../'>Categories</a><span> > </span> <a href='../state/list?category=<?php echo $category;?>'>States</a><span> > </span> <a href='../city/list?state_id=<?php echo $state_id;?>&category=<?php echo $category;?>'>Cities</a>
@@ -16,7 +17,7 @@
     </div>
     <?php foreach($cities as $city) { ?>
     <div class='large-3 medium-3 small-3 columns' style='float:left'>
-        <div class='vz-block-list'>
+        <div class='vz-block-list hover-city'>
             <a href='../post/list'><?php echo $city->city_name; ?></a>
         </div>
     </div>
