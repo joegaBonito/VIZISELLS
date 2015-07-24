@@ -1,15 +1,3 @@
-.Signup{
-    float:left;
-    position:absolute;
-}
-.IDbox{
-    float:left;
-}
-
-.PWbox{
-    float:left;
-}
-
 li.centerli{
     padding:2px;
 	margin:2px;
@@ -42,17 +30,18 @@ li.sideli{
 	padding:0;
 	font-size:20px;
 	position:absolute;
-	left:4%;	
+	top:2%;
+	left:5%;	
 }
 
 .description {
 	display:none;
 	margin:0;
 	padding:0;
-	font-size:14px;
+	font-size:18px;
 	text-align:left;
-	top:10%;
-	left:5%;
+	top:15%;
+	left:12%;
 	position:absolute;
 	color:white;
 }
@@ -126,4 +115,12 @@ li.sideli{
     color: #FFF;
    /* background-color: #344F7D;*/
 	font-size:14px;
+	left:7%;
+}
+
+.half-width > .description {
+	width:80%;
+	font-size:14px;
+	top:12%;
+	left:7%;
 }
