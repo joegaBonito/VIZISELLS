@@ -22,6 +22,84 @@
     float: center;
 }
 
+#thumbnail{
+    float:left;
+}
+
+#poststatus{
+	padding-left: 10px;
+}
+
+#addbutton{
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:20px;
+}
+
+#edit_delete{
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#edit{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#delete{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#editbutton{
+        margin-left:0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        width: 75.25px;
+        height: 30px;
+        background-color: #189c2e;
+        border-color: #189c2e;
+        padding-left: 0px;
+        padding-right: 0px;
+}
+
+#deletebutton{
+        margin-left:0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 75.25px;
+        height: 30px;
+        background-color: #f94343;
+        border-color: #f94343;
+        padding-left: 0px;
+        padding-right: 0px;
+}
+
+#postbuttons{
+    margin-left:0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+#repostbutton{
+            margin-top: 25px;
+            margin-bottom: 10px;
+            background-color: #f0a355;
+            border-color: #f0a355;
+}
+
 #savebutton{
     height : 38px;
     margin-bottom: 0px;
