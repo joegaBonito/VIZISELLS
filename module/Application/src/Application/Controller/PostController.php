@@ -16,6 +16,12 @@ class PostController extends AbstractActionController
         ));
     }
 
+    public function detailAction()
+    {
+        return new ViewModel(array(
+        ));
+    }
+
     public function getPostTable($cate) {
         if (!$this->postTable) {
             $sm = $this->getServiceLocator();
