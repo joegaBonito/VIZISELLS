@@ -31,27 +31,50 @@
 <!--Pop up -->
 <!-- Reveal Modals begin -->
 <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog" style="top:175px;display:none;visibility:hidden;opacity:1;">
-  <h2 id="firstModalTitle">Sign up!</h2>
+  <h2 class="small-12 columns" id="firstModalTitle">Sign in</h2>
 
 <!--Log in form-->
 <form action = "vizi-admin.php" method="POST">
     <div class="row">
-        <div class="small-6 columns">
-          <label for="ID">ID: </label>
-          <input type="text" name="ID" placeholder="Type your ID..." />       
-          <label for="PW">PW: </label>
-          <input type="password" name="PW" placeholder="Type your password..." />
-   	</div>
+		<div class = "small-6">
+        <div class="small-12 columns">
+          <input type="text" name="ID" placeholder="Email address" />       
+          <input type="password" name="PW" placeholder="Password" />
+   		</div>
+	</div>
     </div>
+
+	<div class="row">
+		<div class = "small-6">
+			<div class = "small-6 columns">
+				<input type="checkbox" name="Signed" value="StaySignedIn">Stay signed in  
+			</div>
+			<div class = "small-6 columns">
+				Forgot Password?
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-6 columns">
+			Uncheck on public devices.
+		</div>
+	</div>
+
     <div class="row">
-        <div class = "large-4 medium-4 small-4 columns Login">
+        <div class = "large-6 medium-6 small-6 columns">
         <!--This log in URL will lead to User page -->
-        <a href="../" class="secondary button">Log In</a>
-	<span>	    
-	<a href="#" data-reveal-id="secondModal" class="secondary button">Sign Up?</a>
-        </span>
+        <a href="../" class="button small-12 Login">Sign In</a>
     	</div>
     </div>
+
+	<div class ="row">
+		<div class = "small-6">
+			<div class = "small-12 columns">
+				Not a member yet? <a href="../">Get a Vizisells ID</a>
+			</div>
+		</div>
+	</div>	
 </form>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
