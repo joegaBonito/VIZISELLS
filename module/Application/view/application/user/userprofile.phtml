@@ -9,11 +9,70 @@
         </ul>
     </div>
     <div class = "row" id = "contentsrow">
-        <div class="callout panel" id = "allpostspanel">
+		<div class="callout panel" id = "allpostspanel">
             <div class="tabs-content">
                 <div class="content active" id="panel1">
-                    <p>dashboard</p>
-                </div>
+                    <a href="#" class="tiny button" id = "addbutton">Add Post</a>
+					<!--Active Post-->
+                    <div class = "row" id = "postpanel">
+						<div class = "small-1 columns" id = "thumbnail">
+                            <a class = "th" id = "thumbimg" role = "button" aria-label = "Thumbnail" href = "#">
+                                <img aria-hidden=true src="https://lh3.googleusercontent.com/-NYmBRZN0E7U/AAAAAAAAAAI/AAAAAAAAACI/VsA9fnrvtu4/photo.jpg?sz=50"/>
+                            </a>
+					    </div>
+	                    <div class = "small-10 columns" id = "description">
+	                        <a href = "#">Active Post</a>
+						    <img id = "poststatus" src = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROLCibxVLTWCrWgASvFChnryHweKf5wq3vxv14Vm9gDXFEzxau"/>
+	                        <br> I am Active Post
+					    </div>
+					    <div class = "small-1 columns" id = "postbuttons">
+					        <div class = "row" id = "edit_delete">
+							    <div class = "small-12 columns" id = "edit">
+							            <a href="#" class="tiny button" id = "editbutton">Edit</a>
+						        </div>
+						        <div class = "small-12 columns" id = "delete">
+						             <a href="#" class="tiny button" id = "deletebutton">Delete</a>
+					            </div>
+						    </div>
+					    </div>
+			        </div>
+				    <!--Expired & Deleted Post-->
+				    <div class = "row" id = "postpanel">
+                        <div class = "small-1 columns" id = "thumbnail">
+                            <a class = "th" id = "thumbimg" role = "button" aria-label = "Thumbnail" href = "#">
+                                <img aria-hidden=true src="https://lh3.googleusercontent.com/-NYmBRZN0E7U/AAAAAAAAAAI/AAAAAAAAACI/VsA9fnrvtu4/photo.jpg?sz=50"/>
+                            </a>
+					    </div>
+                        <div class = "small-10 columns" id = "description">
+                            <a href = "#"> Expired Post</a>
+						    <img id = "poststatus" src = "http://www.estate3d.com/wp-content/uploads/2015/03/Housing-Bubble-50x20.jpg"/>
+                            <br> I am Expired Post
+   				        </div>
+   					    <div class = "small-1 columns" id = "postbuttons">
+   					        <div class = "row">
+                                <a href="#" class="tiny button" id = "repostbutton">Repost</a>
+   						    </div>
+   					    </div>
+                    </div>
+					
+				    <div class = "row" id = "postpanel">
+                        <div class = "small-1 columns" id = "thumbnail">
+                            <a class = "th" id = "thumbimg" role = "button" aria-label = "Thumbnail" href = "#">
+                                <img aria-hidden=true src="https://lh3.googleusercontent.com/-NYmBRZN0E7U/AAAAAAAAAAI/AAAAAAAAACI/VsA9fnrvtu4/photo.jpg?sz=50"/>
+                            </a>
+					    </div>
+                        <div class = "small-10 columns" id = "description">
+                            <a href = "#"> Deleted Post</a>
+						    <img id = "poststatus" src = "http://img.new.livestream.com/accounts/0000000000864d1f/399c9cf6-373a-4e8c-ba60-4db12f3f71b3_50x20.jpg"/>
+                            <br> I am Deleted Post
+   				        </div>
+   					    <div class = "small-1 columns" id = "postbuttons">
+   					        <div class = "row">
+                                <a href="#" class="tiny button" id = "repostbutton">Repost</a>
+   						    </div>
+   					    </div>
+                    </div>
+				</div>
                 <div class="content" id="panel2">
                     <div ng-app = "app" ng-controller = "ctrl">
                     <p>

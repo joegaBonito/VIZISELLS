@@ -1,4 +1,5 @@
     <link rel="stylesheet" href="../css/postlist.css" />
+    <link rel="stylesheet" href="../css/postpage.css" />
     <div class = "row" id = "undertopbar">
         <div class = "small-6 columns" id = "textlinks">
             <a href = "home">Categories</a>  > 
@@ -56,7 +57,7 @@
         </div>
     </div>
     <div class = "row" id = "allpostsrow" style="margin-top:20px">
-            <?php foreach($posts as $post): ?>
+        <?php foreach($posts as $post): ?>
         <div style="border:1px solid #999"></div>
         <div class="" id = "allpostspanel" style="margin:20px">
                 <div class = "row" id = "postpanel">
@@ -64,16 +65,43 @@
                         <a class = "th" id = "thumbimg" role = "button" aria-label = "Thumbnail" href = "#" data-reveal-id = "post-popup">
                             <img aria-hidden=true src="<?php echo $post->post_thumb;?>"/>
                         </a>
-                        <div id="post-popup" class = "reveal-modal" data-reveal aria-labelledby = "popup-title" aria-hidden = "true" role = "dialog" href = "#" style="top:175px;">
-                            <h2 id= "popup-title">Popup for post</h2>
+                        <div id="post-popup-<?php echo $post->post_id;?>" class = "reveal-modal" data-reveal aria-labelledby = "popup-title" aria-hidden = "true" role = "dialog" href = "#">
+                            <h2 id= "popup-title"><?php echo $post->post_title;?></h2>
+                            <ul class="example-orbit" data-orbit data-options="timer:false;">
+                                <li>
+                                    <div class = "image-container">
+                                        <img src="<?php echo $post->post_thumb;?>" id = "img" alt="slide 1" />
+                                        <div class="orbit-caption">
+                                            caption one.
+                                        </div>     
+                                    </div> 
+                                </li>
+                                <li>
+                                    <div class = "image-container">
+                                        <img src="http://mrdeyo.com/whiteboard/wp-content/uploads/2013/08/feather-white-500x700.jpg" alt="slide 2" id = "img" />
+                                        <div class="orbit-caption">
+                                            caption two.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class = "image-container">
+                                        <img src="http://www.telemet.com/wp-content/uploads/2009/07/lang_inicio-700x300.jpg" alt="slide 3" id = "img" />
+                                        <div class="orbit-caption">
+                                            caption three.
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div style="margin-top:10px"><?php echo  $post->post_body; ?></div>
                             <a class = "close-reveal-modal" aria-label = "Close">&#215;</a>
                         </div>
                     </div>
                     <div class = "small-11 columns" id = "description">
-                        <a href = "#" data-reveal-id = "post-popup"><?php echo $post->post_title;?></a>
+                        <a href = "#" data-reveal-id = "post-popup-<?php echo $post->post_id;?>"><?php echo $post->post_title;?></a>
                         <br><?php echo  $post->post_head; ?>
                     </div>
                  </div>
         </div>
-            <?php endforeach; ?>
+        <?php endforeach; ?>
     </div>
