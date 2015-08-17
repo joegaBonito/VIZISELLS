@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../css/postcreation.css" />
+
+<form ng-app = "myApp" class = "Postingform" name = "myform" ng-submit="submit()" ng-controller="myCtrl">
+    Posting Name:
+    <input type="text" ng-model = "postingname" name = "postingname" class = "Postingname"/>
+    Asking Price:
+    <input type="text" ng-model = "askingprice" name = "askingprice" class = "Askingprice"/>
+    Description:
+    <textarea cols = "40" rows = "5" ng-model = "description" name = "description" class = "Description"></textarea>
+    <div class = "row" id = "selections">
+        <div class = "small-3 columns" id = "selection1">
+            Selection<br>
+            <a href="#" class=" tiny button" data-dropdown="drop1">Link Dropdown &raquo;</a>
+                <ul id="drop1" class="tiny f-dropdown" data-dropdown-content>
+                    <li><a href="#">This is a link</a></li>
+                    <li><a href="#">This is another</a></li>
+                    <li><a href="#">Yet another</a></li>
+                </ul>
+        </div>
+        <div class = "small-3 columns" id = "selection2">
+            Year<br>
+            <a href="#" class=" tiny button" data-dropdown="drop2">Link Dropdown &raquo;</a>
+                <ul id="drop2" class="tiny f-dropdown" data-dropdown-content>
+                    <li><a href="#">This is a link</a></li>
+                    <li><a href="#">This is another</a></li>
+                    <li><a href="#">Yet another</a></li>
+                </ul>
+        </div>
+        <div class = "small-3 columns" id = "selection3">
+            Model<br>
+            <a href="#" class=" tiny button" data-dropdown="drop3">Link Dropdown &raquo;</a>
+                <ul id="drop3" class="tiny f-dropdown" data-dropdown-content>
+                    <li><a href="#">This is a link</a></li>
+                    <li><a href="#">This is another</a></li>
+                    <li><a href="#">Yet another</a></li>
+                </ul>
+        </div>
+        <div class = "small-3 columns" id = "selection4">
+            Listing Expires<br>
+            <a href="#" class="tiny button" data-dropdown="drop4">Link Dropdown &raquo;</a>
+                <ul id="drop4" class="tiny f-dropdown" data-dropdown-content>
+                    <li><a href="#">This is a link</a></li>
+                    <li><a href="#">This is another</a></li>
+                    <li><a href="#">Yet another</a></li>
+                </ul>
+        </div>
+    </div>
+    Images
+    <input type="file" ng-model="images"/>
+    <h5><a href ="#">Selling Rules and Regulations</a><br>
+    <a href ="#" class = "small button" id = "postbutton">Post this ad</a>
+</form>
+ 
