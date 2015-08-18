@@ -1,0 +1,27 @@
+.Postingform{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Postingname{
+    max-width: 300px;
+}
+
+.Askingprice{
+    max-width: 200px;
+}
+
+.Description{
+    max-width: 800px;
+}
+
+#selection1{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#postbutton{
+    margin-top:10px;
+    background-color: #f0a355;
+    border-color: #f0a355;
+}
