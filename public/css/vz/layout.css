@@ -1,7 +1,11 @@
 .Login {	
-    background-color:#008CBA;
+    background-color:#344f7d;
     border-color: #b9b9b9;
-    color: #333333;
+	color:#ffffff;
+}
+
+.Login:hover {
+	background-color:#3a7aa2;
 }
 
 .Signup{
